@@ -3,22 +3,16 @@ import React from 'react';
 const Experience = () => {
   const jobs = [
     {
-      role: "Senior Frontend Developer",
-      company: "Tech Corp Inc.",
-      period: "2021 - Presente",
-      desc: "Liderando la migración de legacy code a React 18. Mejora del rendimiento en un 40%."
+      role: "Practicas FCT",
+      company: "Consultoria Mirelia",
+      period: "Marzo - Junio 2024",
+      desc: "Gestión de CRM y Administración de grupo"
     },
     {
-      role: "Web Developer",
-      company: "Agencia Creativa",
-      period: "2019 - 2021",
-      desc: "Desarrollo de landing pages interactivas y e-commerce con Shopify y Javascript."
-    },
-    {
-      role: "Junior Dev",
-      company: "Startup Local",
-      period: "2018 - 2019",
-      desc: "Mantenimiento de bases de datos y corrección de bugs en el backend."
+      role: "4eso+empresa",
+      company: "Juguetrónica",
+      period: "Abril 2022",
+      desc: "Gestión de Eventos y servicio al cliente"
     }
   ];
 

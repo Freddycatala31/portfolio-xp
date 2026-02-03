@@ -3,8 +3,10 @@ import React from 'react';
 
 const Projects = () => {
   const projects = [
-    { name: "E-commerce App", tech: "React, Redux", img: "ruta/a/imagen1.jpg" },
-    { name: "Dashboard Crypto", tech: "D3.js, API", img: "ruta/a/imagen2.jpg" }
+    { name: "Videojuego 2D en Unity", tech: "Unity, C#"},
+    { name: "Dashboard de datos sobre el ascensor social", tech: "HTML,CSS,JavaScript, Chart.js"},
+    { name: "Gestor de empleados", tech: "Python,Tkiner"},
+    { name: "Desarrollo de un CRM empresarial", tech: "Angular 18, SpringBoot-Java21"}
   ];
 
   return (
@@ -14,7 +16,6 @@ const Projects = () => {
         {projects.map((p, i) => (
           <fieldset key={i}>
             <legend>{p.name}</legend>
-            <img src={p.img} alt={p.name} style={{ width: '100%', height: '100px', objectFit: 'cover' }} />
             <p style={{ fontSize: '12px' }}>Tech: {p.tech}</p>
           </fieldset>
         ))}

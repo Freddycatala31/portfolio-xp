@@ -1,30 +1,25 @@
 import React, { useState } from 'react';
 
 const Tech = () => {
-  const [activeTab, setActiveTab] = useState('frontend');
+  const [activeTab, setActiveTab] = useState('tecnologias');
 
   return (
     <div style={{ padding: '10px' }}>
       {/* Menú de Pestañas */}
       <menu role="tablist" className="multi-rows">
-        <li 
-          role="tab" 
-          aria-selected={activeTab === 'frontend'} 
-          onClick={() => setActiveTab('frontend')}
+        <li
+          role="tab"
+          aria-selected={activeTab === 'tecnologias'}
+          onClick={() => setActiveTab('tecnologias')}
+          style={{ padding: '8px 12px', marginRight: '12px' }}
         >
-          <a href="#frontend">Frontend</a>
+          <a href="#tecnologias">Tecnologías</a>
         </li>
-        <li 
-          role="tab" 
-          aria-selected={activeTab === 'backend'} 
-          onClick={() => setActiveTab('backend')}
-        >
-          <a href="#backend">Backend</a>
-        </li>
-        <li 
-          role="tab" 
-          aria-selected={activeTab === 'tools'} 
+        <li
+          role="tab"
+          aria-selected={activeTab === 'tools'}
           onClick={() => setActiveTab('tools')}
+          style={{ padding: '8px 12px', marginRight: '12px' }}
         >
           <a href="#tools">Tools</a>
         </li>
@@ -34,39 +29,30 @@ const Tech = () => {
       <div className="window" role="tabpanel" style={{ height: '200px' }}>
         <div className="window-body">
           
-          {activeTab === 'frontend' && (
+          {activeTab === 'tecnologias' && (
             <div>
-              <p>Tecnologías de Interfaz:</p>
+              <p>Tecnologías</p>
               <ul className="tree-view">
-                <li>React.js (Hooks, Context)</li>
-                <li>Vue.js</li>
-                <li>CSS3 / SASS / Tailwind</li>
-                <li>Redux Toolkit</li>
+                <li>Java</li>
+                <li>MySQL</li>
+                <li>HTML / CSS / JavaScript</li>
+                <li>Unity</li>
+                <li>Python</li>
+                <li>Arduino(C)</li>
+                <li>Sistemas Operativos - Windows/Linux</li>
               </ul>
             </div>
           )}
 
-          {activeTab === 'backend' && (
-            <div>
-              <p>Servidor y Base de Datos:</p>
-              <ul className="tree-view">
-                <li>Node.js & Express</li>
-                <li>Python (Django)</li>
-                <li>PostgreSQL</li>
-                <li>MongoDB</li>
-              </ul>
-            </div>
-          )}
 
           {activeTab === 'tools' && (
             <div>
               <p>Herramientas de desarrollo:</p>
               <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-                <button disabled>Git</button>
-                <button disabled>Docker</button>
-                <button disabled>Figma</button>
-                <button disabled>Jira</button>
-                <button disabled>VS Code</button>
+                <button >Visual Studio Code</button>
+                <button >Git</button>
+                <button >Figma</button>
+                <button >Trello</button>
               </div>
             </div>
           )}

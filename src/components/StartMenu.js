@@ -1,4 +1,5 @@
 import React from 'react';
+import foto from '../materials/user-icon.jpg';
 
 const StartMenu = ({ isOpen }) => {
   if (!isOpen) return null;
@@ -27,7 +28,7 @@ const StartMenu = ({ isOpen }) => {
         gap: '10px'
       }}>
         <img 
-          src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" 
+          src={foto} 
           alt="User" 
           style={{ width: '40px', height: '40px', borderRadius: '3px', border: '2px solid white' }}
         />
