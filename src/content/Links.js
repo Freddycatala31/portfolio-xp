@@ -5,7 +5,7 @@ const Links = () => {
   const links = [
     { title: "GitHub", url: "https://github.com/Freddycatala31", icon: "💻" },
     { title: "LinkedIn", url: "https://www.linkedin.com/in/irene-ortiz-%C3%A1lvarez/", icon: "🤝" },
-    { title: "Descargar CV", url: "/curriculum.pdf", icon: "📄" }, // Asegúrate de tener un PDF en la carpeta public
+    { title: "Descargar CV", url: "public/curriculum.pdf", icon: "📄" }, // Asegúrate de tener un PDF en la carpeta public
   ];
 
   return (
